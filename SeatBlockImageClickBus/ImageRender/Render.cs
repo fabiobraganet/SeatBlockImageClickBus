@@ -17,19 +17,23 @@ namespace ImageRender
         private readonly float[] _y;
         private readonly List<Seat> _seats;
 
+        private List<Seat> _reserved { get; set; } = new List<Seat>();
+
         public Render(List<Seat> seats)
         {
             _template = Properties.Resources.Template202002;
             
             _x = new float[14];
             _y = new float[5];
-            _seats = seats;
+            _seats = (seats != null) ? seats : new List<Seat>();
 
             SetCoordinates();
         }
 
-        public Stream GetStream()
+        public Stream GetStream(List<Seat> reserved)
         {
+            _reserved = reserved;
+
             MemoryStream stream = new MemoryStream();
 
             var doc = new XmlDocument();
@@ -64,15 +68,25 @@ namespace ImageRender
         {
             var seat = new Svg.SvgRectangle();
 
-            var seatcolor = Color.FromArgb(126, 238, 0);
+            var seatcolor = Color.FromArgb(255, 255, 255);
             var seatfree = Color.FromArgb(126, 238, 0);
             var seatselected = Color.FromArgb(255, 240, 147);
             var seatoff = Color.FromArgb(238, 238, 238);
 
+            var query = from r in _reserved
+                        where r.Name == item.Name
+                        || (r.Position.X == item.Position.X
+                        && r.Position.Y == item.Position.Y
+                        && r.Position.Z == item.Position.Z)
+                        select item;
+
             if (string.IsNullOrEmpty(item.Available.Trim()))
                 seatcolor = seatoff;
-            else
+            else if (item.Available == "1")
                 seatcolor = seatfree;
+
+            if (query.Any())
+                seatcolor = seatselected;
 
             seat.X = new SvgUnit(SvgUnitType.Pixel, _x[item.Position.X]);
             seat.Y = new SvgUnit(SvgUnitType.Pixel, _y[item.Position.Y]);
