@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Template202002" xml:space="preserve">
+    <value>&lt;svg width='800' height='600' xmlns='http://www.w3.org/2000/svg'&gt;
+ &lt;defs&gt;&lt;style&gt;.cls-t{fill:#547C36;}.cls-0{fill:rgb(126,238,0); stroke-width:1; stroke:#547C36}.cls-9{fill:#547C36}.cls-1{fill:#e3e3e3;}.cls-2{fill:#f5f5f5;}.cls-3{fill:#b1b1b1;}.a{fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:4px;}.b{fill:#e5e4e4;}.c{fill:#030504;}.d{fill:#f0b600;}.e{fill:#bdbdbd;}.f{fill:#5db998;}.g{fill:#eeb500;}.h{fill:#458a70;}.i{fill:#d9a712;}.j{fill:#5bb998;}.k{fill:#aeaeae;}.l{fill:#fdde82;}.m{fill:#3ebcd4;}.n{fill:#32a0ae;}.o{fill:none;stroke:#030504;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}.p{fill:#161927;}&lt;/style&gt;&lt;/defs&gt;
+ &lt;title&gt;Aarim - Assentos&lt;/title&gt;
+&lt;g&gt;
+  &lt;g stroke='null' id='Layer_2'&gt;
+   &lt;g stroke='null' id='Layer_1-2'&gt;
+    &lt;path stroke='null' class='cls-1' d='m59.015061,184.65382' id='svg_1'/&gt;
+    &lt;path stroke='null' class='cls-1' d='m755.94981,184.465028l-7.544564,0c12.898042,0 23.130639,13.126579 23.130639,27.641333l0,178.508153c0,12.848944 -8.018923,22.688326 -18.827527,24.920511l3.241452,0c13.022279,0 23.650175,-10.405757 23.650175,-24.920511l0,-178.508153c-0.011294,-14.514754 -10.627896,-27.641333 -23.650175,-27.641333z' id='svg_2'/&gt;
+    &lt;rect stroke='null' class='cls-1' x='70.794972' width='686.216498' height='1.11054' id='svg_3' y='184.465028'/&gt;
+    &lt;rect stroke='null' class='cls-1' x='74.567254' y='414.335643' width='682.557159' height='1.11054' id='svg_4'/&gt;
+    &lt;path stroke='null' class='cls-2' d='m54.892657,389.581713c-6.257019,-21.54447 -11.373317,-56.970687 -11.373317,-86.411095c0,-30.939636 5.376067,-72.307241 13.891937,-93.773973c7.205736,-18.16843 13.620875,-22.466218 25.220077,-23.821077a27.806462,27.341488 0 0 0 -4.867825,0c-10.164832,1.976761 -19.561654,7.629408 -25.976792,23.876604c-8.549753,21.422311 -12.7851,62.745494 -12.7851,93.718446c0,29.440408 2.450854,65.355262 10.243892,86.39999c6.415138,17.324419 15.642547,23.06591 25.909027,24.953827a39.913906,39.246473 0 0 0 7.90598,0c1.615079,-0.111054 -21.402618,-1.654704 -28.167878,-24.942722z' id='svg_5'/&gt;
+    &lt;path stroke='null' class='cls-1' d='m49.245529,389.581713c-7.793038,-21.100255 -10.243892,-56.959582 -10.243892,-86.39999c0,-30.939636 4.246641,-72.307241 12.762511,-93.773973c6.437727,-16.236091 15.811961,-21.899843 25.976792,-23.876604q1.840964,-0.355373 3.648045,-0.566375a25.796084,25.364727 0 0 0 -5.003356,-0.499743c-16.241142,0 -33.239,-0.233213 -43.223124,24.931617c-8.51587,21.477838 -12.762511,62.801021 -12.762511,93.773973c0,29.440408 2.450854,65.355262 10.243892,86.39999c10.006712,26.99722 26.823862,25.886681 43.731365,25.886681a29.511895,29.018403 0 0 0 4.653234,-0.366478c-1.310134,-0.133265 -2.608973,-0.310951 -3.885225,-0.544164c-10.255186,-1.910128 -19.482594,-7.640513 -25.897732,-24.964933z' id='svg_6'/&gt;
+    &lt;path stroke='null' class='cls-3' d='m32.405791,210.10739a139.11137,136.785176 0 0 0 -4.935591,19.056861c5.116299,-1.710231 10.368128,-7.196297 14.004879,-14.437016c4.156287,-8.273521 4.777471,-16.402672 1.953907,-21.311257c-4.167581,3.653676 -7.98504,8.66221 -11.023195,16.691412z' id='svg_7'/&gt;
+    &lt;path stroke='null' class='cls-3' d='m30.045291,388.471173c3.489926,9.91712 7.90598,16.258301 12.830277,19.989715c3.388277,-4.764215 2.97039,-14.037222 -1.411782,-22.754959c-4.03205,-8.029202 -10.255186,-13.915063 -15.811961,-14.95897a131.160213,128.966977 0 0 0 4.393466,17.724214z' id='svg_8'/&gt;
+    &lt;path stroke='null' class='cls-3' d='m83.862428,363.983773a9.035406,8.884318 0 0 1 0.37271,-2.498714a16.444439,16.169458 0 0 1 10.944136,11.105397a9.035406,8.884318 0 0 1 -11.294258,-8.595577l-0.022589,-0.011105zm0.022589,25.853364a9.035406,8.884318 0 0 1 11.294258,-8.595577a16.455733,16.180564 0 0 1 -10.944136,11.105397a9.035406,8.884318 0 0 1 -0.37271,-2.520925l0.022589,0.011105zm-6.573258,-12.926682a2.880036,2.831876 0 1 1 2.880036,2.831876a2.880036,2.831876 0 0 1 -2.902624,-2.831876l0.022589,0zm-14.37759,0a16.42185,16.147247 0 0 1 12.423683,-15.65861a51.095221,50.240817 0 0 0 0,31.339431a16.42185,16.147247 0 0 1 -12.434978,-15.680821l0.011294,0zm-1.637667,0a18.070812,17.768635 0 1 0 18.070812,-17.768635a18.070812,17.768635 0 0 0 -18.093401,17.768635l0.022589,0z' id='svg_9'/&gt;
+   &lt;/g&gt;
+  &lt;/g&gt;
+  
+  &lt;text fill='#000000' stroke-width='0' x='468.347165' y='84.322751' id='svg_11' font-size='24' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(2.2108074905154087,0,0,1.8063340352644497,-904.1851384254783,-18.104251293420077) ' stroke='#000'&gt;MAPA DE ASSENTOS&lt;/text&gt;
+  
+  &lt;rect fill='#A0D58A' stroke='#000' stroke-width='0' stroke-opacity='null' x='206.5' y='441.082169' width='21' height='20' id='svg_103'/&gt;
+  &lt;rect fill='#FFF093' stroke='#000' stroke-width='0' stroke-opacity='null' x='294.5' y='441.082169' width='21' height='20' id='svg_104'/&gt;
+  &lt;rect fill='#DDDDDD' stroke='#000' stroke-width='0' stroke-opacity='null' x='458.5' y='441.082169' width='21' height='20' id='svg_105'/&gt;
+  &lt;text fill='#000000' stroke-width='0' stroke-opacity='null' x='232.5' y='446.709371' id='svg_106' font-size='24' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(1,0,0,0.7407407164573669,0,126.50000983476639) ' stroke='#000'&gt;Livre&lt;/text&gt;
+  &lt;text fill='#000000' stroke-width='0' stroke-opacity='null' x='319.5' y='446.709371' id='svg_107' font-size='24' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(1,0,0,0.7407407164573669,0,126.50000983476639) ' stroke='#000'&gt;Selecionado&lt;/text&gt;
+  &lt;text fill='#000000' stroke-width='0' stroke-opacity='null' x='484.5' y='446.709371' id='svg_108' font-size='24' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(1,0,0,0.7407407164573669,0,126.50000983476639) ' stroke='#000'&gt;Ocupado&lt;/text&gt;
+&lt;/g&gt;
+&lt;/svg&gt;</value>
+  </data>
+</root>
