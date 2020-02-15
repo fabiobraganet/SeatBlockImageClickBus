@@ -63,9 +63,29 @@ namespace ImageRender.Tests.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TodosOsAssentosOrdemXeYComSelecionados {
+        internal static System.Drawing.Bitmap OnibusComumVazio {
             get {
-                object obj = ResourceManager.GetObject("TodosOsAssentosOrdemXeYComSelecionados", resourceCulture);
+                object obj = ResourceManager.GetObject("OnibusComumVazio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OnibusLotado {
+            get {
+                object obj = ResourceManager.GetObject("OnibusLotado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TodosOsAssentosOrdemXeYComOcupadosESelecionados {
+            get {
+                object obj = ResourceManager.GetObject("TodosOsAssentosOrdemXeYComOcupadosESelecionados", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

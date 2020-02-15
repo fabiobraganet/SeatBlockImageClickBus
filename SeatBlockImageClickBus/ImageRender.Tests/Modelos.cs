@@ -2,6 +2,7 @@
 namespace ImageRender.Tests
 {
     using ImageRender.Model;
+    using System;
     using System.Collections.Generic;
 
     public static class Modelos
@@ -91,11 +92,61 @@ namespace ImageRender.Tests
             var modelo = new List<Seat>()
             {
                 new Seat() { Id = "18", Available = "1", Name = "18", Position = new Position() { X =  3, Y = 2, Z = 0 } },
-                //new Seat() { Id = "20", Available = "1", Name = "20", Position = new Position() { X =  3, Y = 4, Z = 0 } },
+                new Seat() { Id = "20", Available = "1", Name = "20", Position = new Position() { X =  3, Y = 4, Z = 0 } },
                 new Seat() { Id = "22", Available = "1", Name = "22", Position = new Position() { X =  4, Y = 1, Z = 0 } }
             };
 
             return modelo;
         }
+
+        public static List<Seat> OnibusComum()
+        {
+            var modelo = new List<Seat>();
+            int i = 1;
+
+            for (int x = 0; x < 14; x++)
+                for (int y = 0; y < 5; y++)
+                {
+                    if (y == 2) continue;
+
+                    var num = i;
+
+                    if (y == 3) num += 1;
+                    if (y == 4) num -= 1;
+
+                    var seat = new Seat()
+                    {
+                        Id = num.ToString("00"),
+                        Available = "1",
+                        Name = num.ToString("00"),
+                        Position = new Position()
+                        {
+                            X = x,
+                            Y = y,
+                            Z = 0
+                        }
+                    };
+
+                    modelo.Add(seat);
+
+                    i++;
+                }
+
+            return modelo;
+        }
+
+        private static Random rng = new Random();
+
+        public static void OcuparOnibusComum(this List<Seat> seats)
+        {
+            foreach (var item in seats)
+            {
+                var ocupar = rng.Next(0, 4);
+
+                if (ocupar == 1)
+                    item.Available = "";
+            }
+        }
+        
     }
 }
